@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <body>
-<script type="text/javascript">
+
+<script language="javascript">
+
+    <script type="text/javascript">
         function click_me(){
             var selected;
             alert("inside java script");
@@ -12,19 +15,19 @@
             alert("inside java script");
             if(sel=="Update Stock Portfolio")
             {
-                window.open("http://localhost/efs/stocks");
+                window.open("stocks");
             }
             else if(sel=="Update non stock investments")
             {
-                window.open("http://localhost/efs/investments");
+                window.open("investments");
             }
             else if(sel=="Select a customer and review profile")
             {
-                window.open("http://localhost/efs/customers");
+                window.open("customers");
             }
         }
     </script>
-
+	
     <center><img style="width:500px;height:350px;" src="/eagletrial/img/Bald_Eagle_Profile_Portrait_2.jpg" alt="Eagle is missing :P"></center>
     <center><h3><b><font size="10" color="red">Eagle Financial Services</font></b></h3></center>
     <center><h2><font  color="blue" face="verdana"> Your Midwest Financial Services Partner</font></h2></center>
@@ -34,13 +37,20 @@
 <!DOCTYPE html>
 <html>
 <body>
+
+<!--<form name="login">
+Username<input type="text" name="userid" placeholder="enter eagle@services.com and Password as 'eagle'"/>
+Password<input type="password" name="pswrd" />
+<input type="button" onclick="check(this.form)" value="Login" "/>
+<input type="reset" value="Cancel"/>
+</form>
 <form name="login" action="C:/wamp/www/eagletrial/app/Controller/homepage.html" method="get" accept-charset="utf-8">
         <label for="usermail">Email</label>
         <input type="email" name="usermail" width="10" placeholder="yourname@email.com" required>
         <label for="password">Password</label>
         <input type="password" name="password" size="10" placeholder="enter 'eagle'" required>
         
-</form>
+</form>-->
 <br>
 <form name="form1" id="form_portfolio">
     <select name="Portfolio" id="select-id">
@@ -50,6 +60,6 @@
     </select>
     <br><br>
     <input type="submit" onclick="click_me()">
-    </form>
+	</form>
 </body>
 </html>
