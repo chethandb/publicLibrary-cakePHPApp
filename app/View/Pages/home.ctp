@@ -2,17 +2,17 @@
 <html>
 <body>
 
-<script language="javascript">
+
 
     <script type="text/javascript">
         function click_me(){
             var selected;
-            alert("inside java script");
+            <!--alert("inside java script");-->
             var yourSelect = document.getElementById( "select-id" );
             var sel = yourSelect.options[ yourSelect.selectedIndex ].value;
             document.getElementsByTagName('option');
 
-            alert("inside java script");
+            <!--alert("inside java script");-->
             if(sel=="Update Stock Portfolio")
             {
                 window.open("stocks");
